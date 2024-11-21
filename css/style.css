@@ -208,7 +208,7 @@
     background-color: #f4f4f4;
 }
 
-*.bf-container {
+*.hb-container {
     display: flex;
     flex-wrap: wrap;
     max-width: 1200px;
@@ -271,6 +271,269 @@
     font-size: 0.9rem;
     color: #666;
 }
+
+/* Blockchain Future*/
+/* Image Cards Section */
+.image-cards {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.bf-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Card Styles */
+.card {
+    position: relative;
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Text Card Overlay */
+.text-card {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.text-card p {
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.text-card button {
+    background-color: #ff7e00;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: flex-start;
+}
+
+.text-card button:hover {
+    background-color: #ff5800;
+}
+
+/* Contact Us Section */
+.contact-us {
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: #ffffff;
+}
+
+.cu-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+/* Left Side: Image */
+.contact-image {
+    flex: 1;
+    max-width: 50%;
+    text-align: center;
+}
+
+.contact-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Right Side: Form */
+.contact-form {
+    flex: 1;
+    max-width: 45%;
+}
+
+.contact-form h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+label {
+    font-size: 1rem;
+    color: #555;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    resize: none;
+}
+
+input:focus, textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.f-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Footer Brand */
+.footer-brand h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #ff7e00;
+}
+
+.footer-brand p {
+    font-size: 0.9rem;
+    color: #cccccc;
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+/* Social Media Section */
+.footer-social h3 {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.social-icons a:hover {
+    background-color: #ff7e00;
+}
+
+.social-icons img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Footer Links */
+.footer-links h3 {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #cccccc;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ff7e00;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid #333;
+    padding-top: 10px;
+}
+
+.footer-bottom p {
+    font-size: 0.8rem;
+    color: #cccccc;
+}
+
 
 
 
@@ -366,7 +629,7 @@
     }
 }
 
-/* Responsive Design Of Block */
+/* Responsive Design Of Our Features  Section */
 @media (max-width: 768px) {
     .blocks {
         flex-direction: column;
@@ -378,6 +641,63 @@
     }
 }
 
-/* Responsive Design Of wo  Blocks Section Blockchain Future */
+/* Responsive Design Of Helping Blockchain */
+@media (max-width: 768px) {
+    .two-blocks {
+        flex-direction: column;
+    }
 
-  
+    .left-block {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .right-block {
+        max-width: 100%;
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Responsive Design Of two  Blocks Section Blockchain Future */
+@media (max-width: 768px) {
+    .bf-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+/* Responsive Design Of Contact Us */
+@media (max-width: 768px) {
+    .cu-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact-image, .contact-form {
+        max-width: 100%;
+    }
+
+    .contact-form h2 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Responsive Design Of footer */
+
+@media (max-width: 768px) {
+    .f-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .footer-brand, .footer-social, .footer-links {
+        max-width: 100%;
+    }
+}
