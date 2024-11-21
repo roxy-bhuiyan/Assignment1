@@ -148,6 +148,130 @@
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
+/* Three Blocks Section */
+.three-blocks {
+    padding: 60px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.blocks {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.block {
+    flex: 1 1 calc(33.333% - 20px);
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.block:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.block-logo {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.block h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.block p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* two  Blocks Section Blockchain Future*/
+.two-blocks {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+}
+
+*.bf-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+} 
+
+/* Left Block */
+.left-block {
+    flex: 1;
+    max-width: 40%;
+}
+
+.left-block h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.left-block p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Right Block */
+.right-block {
+    flex: 1;
+    max-width: 55%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.mini-block {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mini-block:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.mini-logo {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.mini-block h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.mini-block p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
 
 
 
@@ -227,7 +351,7 @@
     }
 }
 
-/* Responsive Design Of Navbar */
+/* Responsive Design Of Clints */
 @media (max-width: 768px) {
     .clients h2 {
         font-size: 1.8rem;
@@ -241,4 +365,19 @@
         grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     }
 }
+
+/* Responsive Design Of Block */
+@media (max-width: 768px) {
+    .blocks {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .block {
+        flex: 1 1 100%;
+    }
+}
+
+/* Responsive Design Of wo  Blocks Section Blockchain Future */
+
   
