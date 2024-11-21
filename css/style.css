@@ -1,3 +1,4 @@
+/* Basic styling */
 /* Basic styling for the navbar */
 * {
     margin: 0;
@@ -21,6 +22,7 @@
   .navbar .logo {
     font-size: 1.5rem;
     font-weight: bold;
+    color: #ff7e00;
   }
 
   .navbar ul {
@@ -35,7 +37,7 @@
 
   .navbar ul li a {
     text-decoration: none;
-    color: white;
+    color: #ffffff;
     font-size: 1rem;
     transition: color 0.3s ease;
   }
@@ -45,7 +47,7 @@
   }
 
   .navbar .button {
-    background-color: #00aaff;
+    background-color: #ff7e00;
     border: none;
     padding: 8px 16px;
     border-radius: 4px;
@@ -59,10 +61,98 @@
     background-color: #0077cc;
   }
 
+  /* Basic styling for the Hero */
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    min-height: 100vh;
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+.join-button {
+    background-color: #ff7e00;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.join-button:hover {
+    background-color: #00aaff;
+}
+
+.hero-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Basic styling for the Clints Section */
+.clients {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.clients h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.clients p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+.clients-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+/*.client-logo img {
+    width: 100%;
+    max-width: 150px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+} */
+
+.client-logo img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
 
 
 
  /* Responsive Design */
+ /* Responsive Design Of Navbar */
 @media (max-width: 768px) {
     .navbar {
       flex-direction: column;
@@ -86,12 +176,6 @@
     }
   }
 
-
-
-
-
-
-  /* Responsive Design */
   @media (max-width: 480px) {
     .navbar {
       flex-direction: row;
@@ -127,4 +211,34 @@
     }
   }
 
+   /* Responsive Design Of Hero */
+   @media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero-image {
+        margin-top: 20px;
+    }
+}
+
+/* Responsive Design Of Navbar */
+@media (max-width: 768px) {
+    .clients h2 {
+        font-size: 1.8rem;
+    }
+
+    .clients p {
+        font-size: 0.9rem;
+    }
+
+    .clients-grid {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+}
   
