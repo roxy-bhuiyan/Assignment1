@@ -1,0 +1,130 @@
+/* Basic styling for the navbar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+  }
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+  }
+
+  .navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+
+  .navbar ul li {
+    display: inline;
+  }
+
+  .navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+
+  .navbar ul li a:hover {
+    color: #00aaff;
+  }
+
+  .navbar .button {
+    background-color: #00aaff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .navbar .button:hover {
+    background-color: #0077cc;
+  }
+
+
+
+
+ /* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 15px;
+    }
+  
+    .navbar ul {
+      flex-direction: column;
+      width: 100%;
+      gap: 10px;
+    }
+  
+    .navbar ul li {
+      text-align: left;
+    }
+  
+    .navbar .button {
+      align-self: flex-start;
+      margin-top: 10px;
+    }
+  }
+
+
+
+
+
+
+  /* Responsive Design */
+  @media (max-width: 480px) {
+    .navbar {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .navbar ul {
+      display: none;
+    }
+  
+    .navbar .menu-toggle {
+      display: block;
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: white;
+    }
+  
+    .navbar.active ul {
+      display: flex;
+      flex-direction: column;
+      background-color: #444;
+      width: 100%;
+      padding: 10px 0;
+    }
+  
+    .navbar.active ul li {
+      text-align: center;
+    }
+  
+    .navbar.active ul li a {
+      padding: 10px;
+      display: block;
+    }
+  }
+
+  
