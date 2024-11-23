@@ -22,7 +22,7 @@
   .navbar .logo {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #ff7e00;
+    color: #FFB01D;
   }
 
   .navbar ul {
@@ -47,7 +47,7 @@
   }
 
   .navbar .button {
-    background-color: #ff7e00;
+    background-color: #FFB01D;
     border: none;
     padding: 8px 16px;
     border-radius: 4px;
@@ -67,8 +67,8 @@
     align-items: center;
     justify-content: space-between;
     padding: 40px 20px;
-    background: linear-gradient(135deg, #6a11cb, #2575fc);
-    color: white;
+    background: linear-gradient(135deg, #6a11cb, #f4f4f4);
+    color: #ffffff;
     min-height: 100vh;
 }
 
@@ -88,7 +88,7 @@
 }
 
 .join-button {
-    background-color: #ff7e00;
+    background-color: #FFB01D;
     color: white;
     padding: 10px 20px;
     font-size: 1rem;
@@ -110,7 +110,7 @@
 /* Basic styling for the Clints Section */
 .clients {
     padding: 60px 20px;
-    background-color: #f9f9f9;
+    background: #cca8f1;
     text-align: center;
 }
 
@@ -151,7 +151,7 @@
 /* Three Blocks Section */
 .three-blocks {
     padding: 60px 20px;
-    background-color: #f4f4f4;
+    background: #d2b6ee;
     text-align: center;
 }
 
@@ -205,7 +205,7 @@
     justify-content: space-between;
     gap: 20px;
     padding: 40px 20px;
-    background-color: #f4f4f4;
+    background: #d7c3eb;
 }
 
 *.hb-container {
@@ -277,6 +277,7 @@
 .image-cards {
     padding: 40px 20px;
     text-align: center;
+    background: #dfd3eb;
 }
 
 .bf-container {
@@ -349,7 +350,7 @@
     justify-content: center;
     align-items: center;
     gap: 30px;
-    background-color: #ffffff;
+    background: #eae5ee;
 }
 
 .cu-container {
